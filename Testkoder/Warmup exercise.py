@@ -18,10 +18,10 @@ PORT = int(input("Hvilken port vil du koble til?: ")) #1301
 
 
 def connect_to_server():
-    x = 1
+    bool loop_connect = True
     client_socket.connect((HOST, PORT)) #Connecter til Sockets med inputs som ble spurt om tidligere
 
-    while x < 5: #Looper login til du har tastet riktig passord
+    while loop_connect = True: #Looper login til du har tastet riktig passord
         username = input("Enter you username here: ") #Skriv inn brukernavn
         password = input("Enter the password for the server") #Som her er 123, sender feilmelding tilbake if password != 123
         authorization_request = [username, password]  # Sender en string til serveren
@@ -33,7 +33,7 @@ def connect_to_server():
         if authorization_response == "Authorized":
             print("Connection established")
             bool_connected = True
-            break;
+            loop_connect = False
         else:
             print("Failed to connect to the server, try again!")
 
