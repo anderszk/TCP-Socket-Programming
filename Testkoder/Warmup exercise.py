@@ -1,3 +1,7 @@
+#DENNE ER OVERDONE OG OVERKOMPLISERT, 
+
+
+
 #Warm-up exercise Gruppe 11
 #@anderszk 27.10.2020
 
