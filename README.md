@@ -1,10 +1,10 @@
 # TCP-Socket-Programming
 
 **IELET2001: Datakommunikasjon**
-**Gruppe 11:**
+**Group 11:**
 
 
-| Navn  | Brukernavn |  Bidrag |
+| Name  | Username |  Contributions |
 | ------------- | ------------- |  ------------- |
 | **Henrik Aamodt**  | ""  |  0 |
 | **Håvard Kalliainen**  | ""  |  0 |
