@@ -53,7 +53,7 @@
       <recent name="C:\Users\xept\Documents\GitHub\TCP-Socket-Programming\Testkoder" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SUPERTEST2">
+  <component name="RunManager" selected="Python.SUPERTEST3">
     <configuration name="SUPERTEST KOMMUNISKASJON" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TCP-Socket-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,6 +98,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="SUPERTEST3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TCP-Socket-Programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testkoder" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testkoder/SUPERTEST3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test TCP-Programming" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TCP-Socket-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,6 +144,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SUPERTEST3" />
         <item itemvalue="Python.SUPERTEST2" />
         <item itemvalue="Python.SUPERTEST KOMMUNISKASJON" />
         <item itemvalue="Python.Test TCP-Programming" />
@@ -140,6 +163,7 @@
       <workItem from="1601377138920" duration="49000" />
       <workItem from="1601377200670" duration="154000" />
       <workItem from="1601377367190" duration="627000" />
+      <workItem from="1601378233977" duration="328000" />
     </task>
     <servers />
   </component>
@@ -190,6 +214,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Test_TCP_Programming.coverage" NAME="Test TCP-Programming Coverage Results" MODIFIED="1601377378647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic Server_Client Communication" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST_KOMMUNISKASJON.coverage" NAME="SUPERTEST KOMMUNISKASJON Coverage Results" MODIFIED="1601377948462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST3.coverage" NAME="SUPERTEST3 Coverage Results" MODIFIED="1601378557665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST_KOMMUNISKASJON.coverage" NAME="SUPERTEST KOMMUNISKASJON Coverage Results" MODIFIED="1601378244760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST2.coverage" NAME="SUPERTEST2 Coverage Results" MODIFIED="1601378301309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
   </component>
 </project>
