@@ -9,5 +9,5 @@
 | **Henrik Aamodt**  | aahenrik  |  0 |
 | **Håvard Kalliainen**  | haavardnk  |  0 |
 | **Anders Kristensen**  | anderszk  |  2 |
-| **Sacit Senkaya**  | ""  |  0 |
+| **Sacit Senkaya**  | sacitali  |  0 |
 
