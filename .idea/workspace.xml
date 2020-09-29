@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f89731-03c1-42e7-b82e-a0075b68c7fb" name="Default Changelist" comment="Commiting!" />
+    <list default="true" id="43f89731-03c1-42e7-b82e-a0075b68c7fb" name="Default Changelist" comment="test1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,8 +53,8 @@
       <recent name="C:\Users\xept\Documents\GitHub\TCP-Socket-Programming\Testkoder" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SUPERTEST3">
-    <configuration name="SUPERTEST KOMMUNISKASJON" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Client">
+    <configuration name="Client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TCP-Socket-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -62,12 +62,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testkoder" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Håvard's kode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testkoder/SUPERTEST KOMMUNISKASJON.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Håvard's kode/Client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -76,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SUPERTEST2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Mal for client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TCP-Socket-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,12 +84,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testkoder" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Maler for server og client" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testkoder/SUPERTEST2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Maler for server og client/Mal for client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,7 +98,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SUPERTEST3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TCP-Socket-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,12 +106,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testkoder" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Håvard's kode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testkoder/SUPERTEST3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Håvard's kode/Server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,12 +142,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Warmup exercise" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TCP-Socket-Programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testkoder" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testkoder/Warmup exercise.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SUPERTEST3" />
-        <item itemvalue="Python.SUPERTEST2" />
-        <item itemvalue="Python.SUPERTEST KOMMUNISKASJON" />
+        <item itemvalue="Python.Client" />
+        <item itemvalue="Python.Server" />
+        <item itemvalue="Python.Mal for client" />
         <item itemvalue="Python.Test TCP-Programming" />
+        <item itemvalue="Python.Warmup exercise" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +186,7 @@
       <workItem from="1601377138920" duration="49000" />
       <workItem from="1601377200670" duration="154000" />
       <workItem from="1601377367190" duration="627000" />
-      <workItem from="1601378233977" duration="1050000" />
+      <workItem from="1601378233977" duration="13865000" />
     </task>
     <servers />
   </component>
@@ -187,22 +210,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="TESTER! hei." />
   </component>
   <component name="WindowStateProjectService">
-    <state width="436" height="403" key="GridCell.Tab.0.bottom" timestamp="1601378557675">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1601407184437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="436" height="403" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601378557675" />
-    <state width="436" height="403" key="GridCell.Tab.0.center" timestamp="1601378557675">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601407184437" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1601407184437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="436" height="403" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601378557675" />
-    <state width="436" height="403" key="GridCell.Tab.0.left" timestamp="1601378557675">
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601407184437" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1601407184437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="436" height="403" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601378557675" />
-    <state width="436" height="403" key="GridCell.Tab.0.right" timestamp="1601378557675">
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601407184437" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1601407184437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="436" height="403" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601378557675" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601407184437" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1601407184438">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601407184438" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1601407184438">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1601407184438" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1601407184437">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1601407184437" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1601407184438">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1601407184438" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1601377322987">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -213,9 +252,13 @@
     <state x="458" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1601377961239" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Test_TCP_Programming.coverage" NAME="Test TCP-Programming Coverage Results" MODIFIED="1601377378647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic Server_Client Communication" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Test_TCP_Programming.coverage" NAME="Test TCP-Programming Coverage Results" MODIFIED="1601379764150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic Server_Client Communication" />
     <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST3.coverage" NAME="SUPERTEST3 Coverage Results" MODIFIED="1601378557665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
     <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST_KOMMUNISKASJON.coverage" NAME="SUPERTEST KOMMUNISKASJON Coverage Results" MODIFIED="1601378244760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Client.coverage" NAME="Client Coverage Results" MODIFIED="1601406855697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Warmup_exercise.coverage" NAME="Warmup exercise Coverage Results" MODIFIED="1601379412051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
     <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST2.coverage" NAME="SUPERTEST2 Coverage Results" MODIFIED="1601378301309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Server.coverage" NAME="Server Coverage Results" MODIFIED="1601406854075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Mal_for_client.coverage" NAME="Mal for client Coverage Results" MODIFIED="1601404835895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Maler for server og client" />
   </component>
 </project>
