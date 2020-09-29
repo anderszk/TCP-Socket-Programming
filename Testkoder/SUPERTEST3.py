@@ -1,1 +1,0 @@
-print("Heisann på deisann gruppe 11!!!")
