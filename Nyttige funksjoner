@@ -1,0 +1,7 @@
+# Konverterer tall fra en streng til enkelt tall.
+
+def string_to_int(string, n):  # n = hvilket tall du vil ha, første tallet i stringen? n = 1!
+    numbers = [int(i) for i in string.split() if i.isdigit()]
+    return numbers[n - 1]
+
+print(string_to_int("3 epler liker 7 bananer", 2)) # returnerer 7, fordi 7 er det andre tallet i strengen.
