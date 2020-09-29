@@ -6,8 +6,8 @@
 
 | Name  | Username |  Contributions |
 | ------------- | ------------- |  ------------- |
-| **Henrik Aamodt**  | aahenrik  |  0 |
-| **Håvard Kalliainen**  | haavardnk  |  0 |
-| **Anders Kristensen**  | anderszk  |  2 |
+| **Henrik Aamodt**  | aahenrik  |  2 |
+| **Håvard Kalliainen**  | haavardnk  |  2 |
+| **Anders Kristensen**  | anderszk  |  4 |
 | **Sacit Senkaya**  | sacitali  |  0 |
 
