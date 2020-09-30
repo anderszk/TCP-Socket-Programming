@@ -40,12 +40,13 @@ def close_connection():
 
 
 def send_request_to_server(request):
-    request_strip = request.strip(" ")
-    split = request_strip.split()
-    split_send = []
-    print(split)
-    for i in split:
-        split_send.append(i+'\n')
+    request_strip = request.strip("+")
+    split_send = request_strip.split()
+
+    if "Game over" in split_send:
+        close_connection()
+    elif "bla+bla" in split_send:
+        return false
 
     try:
         for u in split_send:
