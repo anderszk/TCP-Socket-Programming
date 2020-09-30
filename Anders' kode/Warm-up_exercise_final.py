@@ -27,6 +27,7 @@ def close_connection():
     global client_socket
     try:
         client_socket.close()  # Stenger/Avslutter tilkoblingen
+        ("CLOSED")
         return True
     except:
         return False
@@ -42,19 +43,19 @@ def close_connection():
 def send_request_to_server(request):
     request_strip = request.strip("+")
     split_send = request_strip.split()
+    print(request_strip)
 
-    if "Game over" in split_send:
+    if "game over" in split_send:
         close_connection()
-    elif "bla+bla" in split_send:
-        return false
-
-    try:
+        return False
+    elif "bla" in split_send:
+        print("ERROR")
+        return False
+    else:
         for u in split_send:
             client_socket.send(u.encode())
-
         return True
-    except:
-        return False
+
 
 
 
@@ -95,7 +96,9 @@ def run_client_tests():
     print("Server responded with: ", response)
     seconds_to_sleep = 2 + random.randint(0, 5)
     print("Sleeping %i seconds to allow simulate long client-server connection..." % seconds_to_sleep)
-    time.sleep(seconds_to_sleep * 1000)
+    time.sleep(seconds_to_sleep)
+
+    print("Pause done")
 
     request = "bla+bla"
     if not send_request_to_server(request):

@@ -40,7 +40,8 @@ def adder(response):
 
 if __name__ == "__main__": #Prox
     start_server()
-    server_function()
+    while True:
+        server_function()
 #else:
     #print("Something went wrong!")
 
