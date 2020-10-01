@@ -14,8 +14,7 @@ def start_server():
 def read_request():
     global connection_socket
     request_client = connection_socket.recv(1000).decode()
-    request_decoded = request_client.strip("\n")
-    request = request_decoded.strip("+")
+    request = request_client.strip("\n")
     print("Message from server: ",request)
     return request #Returnerer liste med
 
@@ -23,7 +22,7 @@ def send_response(total):
     global connection_socket
     send = str(total)
     response_server = connection_socket.send(send.encode())
-    print("Message sent to server")
+    print("Message sent to Client")
 
 def server_function():
     request = read_request()
@@ -32,17 +31,19 @@ def server_function():
     send_response(total)
 
 def adder(response):
-    total = eval(response)
-    return total
 
-
+    try:
+        total = eval(response)
+        return total
+    except (NameError):
+        total = "Wrong format, could not add"
+        return total
 
 
 if __name__ == "__main__": #Prox
     start_server()
     while True:
         server_function()
-#else:
-    #print("Something went wrong!")
+
 
 

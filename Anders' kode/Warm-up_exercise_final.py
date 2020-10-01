@@ -29,27 +29,21 @@ def close_connection():
         client_socket.close()  # Stenger/Avslutter tilkoblingen
         ("CLOSED")
         return True
-    except:
+    except IOError:
+        print("Something went wrong")
         return False
-
-    #if not connect_to_server():
-    #    return True
-    #else:
-    #    return False
 
 
 
 
 def send_request_to_server(request):
+    global client_socket
     request_strip = request.strip("+")
     split_send = request_strip.split()
-    print(request_strip)
 
-    if "game over" in split_send:
+    if any('game' and 'over' in s for s in split_send) == True:
         close_connection()
-        return False
-    elif "bla" in split_send:
-        print("ERROR")
+        print("You typed: Game over, you have been disconnected from the server")
         return False
     else:
         for u in split_send:
