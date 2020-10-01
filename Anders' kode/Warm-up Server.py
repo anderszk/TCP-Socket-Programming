@@ -12,23 +12,30 @@ def start_server():
     print("Client connected from: ",client_address) #Printer sistnevnte
 
 def read_request():
-    global connection_socket
-    request_client = connection_socket.recv(1000).decode()
-    request = request_client.strip("\n")
-    print("Message from server: ",request)
-    return request #Returnerer liste med
+    try:
+        global connection_socket
+        request_client = connection_socket.recv(1000).decode()
+        request = request_client.strip("\n")
+        print("Message from server: ",request)
+        return request #Returnerer liste med
+    except ConnectionResetError:
+        print("oops.. something happened")
+
 
 def send_response(total):
-    global connection_socket
-    send = str(total)
-    response_server = connection_socket.send(send.encode())
-    print("Message sent to Client")
+    try:
+        global connection_socket
+        send = str(total)
+        response_server = connection_socket.send(send.encode())
+        print("Message sent to Client")
+
 
 def server_function():
     request = read_request()
     total = adder(request)
     print("The two integers added sums to:",total)
     send_response(total)
+    return total
 
 def adder(response):
 
@@ -38,12 +45,24 @@ def adder(response):
     except (NameError):
         total = "Wrong format, could not add"
         return total
+    except (TypeError):
+        total = "Wrong format, could not add"
+        return total
+    except SyntaxError:
+        print("Client disconnected from Server!")
+        return False
 
 
 if __name__ == "__main__": #Prox
     start_server()
     while True:
         server_function()
+        if adder("nothing") == False:
+            break;
+    print("Goodbye!")
+
+
+
 
 
 

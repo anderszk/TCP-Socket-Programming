@@ -4,6 +4,7 @@
 import random
 import time
 from socket import *
+import os
 
 # Hostname of the server and TCP port number to use
 HOST = input("Enter the name of the server you want to join: ")  #"datakomm.work"
@@ -40,16 +41,17 @@ def send_request_to_server(request):
     global client_socket
     request_strip = request.strip("+")
     split_send = request_strip.split()
-
-    if any('game' and 'over' in s for s in split_send) == True:
-        close_connection()
-        print("You typed: Game over, you have been disconnected from the server")
-        return False
-    else:
-        for u in split_send:
-            client_socket.send(u.encode())
-        return True
-
+    try:
+        if any('game' and 'over' in s for s in split_send) == True:
+            close_connection()
+            print("You typed: Game over, you have been disconnected from the server")
+            return False
+        else:
+            for u in split_send:
+                client_socket.send(u.encode())
+            return True
+    except OSError:
+        "Youre not connected to the server"
 
 
 
@@ -104,8 +106,8 @@ def run_client_tests():
         return "ERROR: Failed to receive server's response!"
 
     print("Server responded with: ", response)
-    if not (send_request_to_server("game over") and close_connection()):
-        return "ERROR: Could not finish the conversation with the server"
+
+    send_request_to_server("game over")
 
     print("Game over, connection closed")
     # When the connection is closed, try to send one more message. It should fail.
