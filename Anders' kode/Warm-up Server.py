@@ -40,7 +40,7 @@ def adder(response): #Function to both determine if the response was integers an
     except (TypeError): #The same as above?
         total = "Wrong format, could not add"
         return total
-    except SyntaxError: #The error that will occur if it exits without finishing all the codeblocks
+    except SyntaxError: #The error that will occur if the client is no longer connected, important!
         print("Client disconnected from Server!")
         return False
 
@@ -48,10 +48,10 @@ def adder(response): #Function to both determine if the response was integers an
 def server_function(): #Function to assemble all the other functions #habit from arduino
     request = read_request() #Reads the request from the client
     total = adder(request) #Checks and add the data from the server
-    if total == False:
-        return False
+    if total == False: ##! If the adder function gets the error that occurs if the client is no longer connected it will return False
+        return False #If the client is disconnected this function will return False
     else:
-        send_response(total) #Sends the response to the client
+        send_response(total) #Sends the response to the client if it is still connected
         return True
 
 
@@ -59,13 +59,13 @@ def server_function(): #Function to assemble all the other functions #habit from
 
 
 
-if __name__ == "__main__": #Prox
+if __name__ == "__main__": #trigger
     start_server()
-    while True:
-        server_function()
-        if server_function() == False:
+    while True: #To keep the server check for responses
+        server_function() #Runs the server-function
+        if server_function() == False:#If the client is not connected the server will break.
             break
-    print("Goodbye!")
+    print("Goodbye!") #Control print to check if it breaks
 
 
 
