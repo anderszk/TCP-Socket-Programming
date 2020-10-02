@@ -62,8 +62,9 @@ def server_function(): #Function to assemble all the other functions #habit from
 if __name__ == "__main__": #trigger
     start_server()
     while True: #To keep the server check for responses
-        server_function() #Runs the server-function
-        if server_function() == False:#If the client is not connected the server will break.
+        check = server_function() #Runs the server-function
+        if check == False:#If the client is not connected the server will break.
+            print("No contact to Client, closing down the server")
             break
     print("Goodbye!") #Control print to check if it breaks
 
