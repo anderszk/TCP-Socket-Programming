@@ -108,7 +108,7 @@ def run_client_tests():
     print("Connection to the server established")
     a = random.randint(1, 20)
     b = random.randint(1, 20)
-    request = str(a) + "+" + str(b)
+    request = str(a) + "+" + str(b) # "3 + 4"
 
     if not send_request_to_server(request):
         return "ERROR: Failed to send valid message to server!"
