@@ -12,4 +12,4 @@
 | **Sacit Senkaya**  | sacitali  |  0 |
 
 
-Part1: Warmup can be find [here](https://github.com/anderszk/TCP-Socket-Programming/tree/master/Anders'%20kode)
+Part1: Warmup can be found [here](https://github.com/anderszk/TCP-Socket-Programming/tree/master/Anders'%20kode)
