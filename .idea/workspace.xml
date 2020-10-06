@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f89731-03c1-42e7-b82e-a0075b68c7fb" name="Default Changelist" comment="test1" />
+    <list default="true" id="43f89731-03c1-42e7-b82e-a0075b68c7fb" name="Default Changelist" comment="test1">
+      <change afterPath="$PROJECT_DIR$/Håvard's kode/Public chat reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Håvard's kode/multi-thread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TCP-Socket-Programming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TCP-Socket-Programming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Håvard's kode/Part2 client template girts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Håvard's kode/Part2 client template girts.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,40 +54,27 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Testkoder" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\xept\Documents\GitHub\TCP-Socket-Programming\Håvard's kode\Utgår" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\xept\Documents\GitHub\TCP-Socket-Programming\Testkoder" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Part2 client template girts">
-    <configuration name="Mal for client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TCP-Socket-Programming" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Maler for server og client" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Maler for server og client/Mal for client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Part2 client template girts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Public chat reader">
+    <configuration name="Client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TCP-Socket-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,6 +87,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Håvard's kode/Client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Part2 client template girts" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TCP-Socket-Programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Håvard's kode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Håvard's kode/Part2 client template girts.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -101,7 +117,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Part2_Kladd_Client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Public chat reader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TCP-Socket-Programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Håvard's kode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Håvard's kode/Public chat reader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Warm-up_exercise_final" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TCP-Socket-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,8 +150,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anders' kode/Part2_Kladd_Client.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anders' kode/Warm-up_exercise_final.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +159,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Stjelte anders sin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="chat_client_TORJE" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TCP-Socket-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,34 +167,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Håvard's kode" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="D:/Nedlastninger" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\xept\Documents\GitHub\TCP-Socket-Programming\Håvard's kode\Utgår\Stjelte anders sin.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TCP-Socket-Programming" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Håvard's kode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\xept\Documents\GitHub\TCP-Socket-Programming\Håvard's kode\Utgår\testing.py" />
+      <option name="SCRIPT_NAME" value="D:/Nedlastninger/chat_client_TORJE.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,15 +182,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Public chat reader" />
+        <item itemvalue="Python.chat_client_TORJE" />
         <item itemvalue="Python.Part2 client template girts" />
-        <item itemvalue="Python.Part2_Kladd_Client" />
-        <item itemvalue="Python.Stjelte anders sin" />
-        <item itemvalue="Python.testing" />
-        <item itemvalue="Python.Mal for client" />
+        <item itemvalue="Python.Warm-up_exercise_final" />
+        <item itemvalue="Python.Client" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="43f89731-03c1-42e7-b82e-a0075b68c7fb" name="Default Changelist" comment="" />
@@ -190,8 +206,6 @@
       <workItem from="1601377200670" duration="154000" />
       <workItem from="1601377367190" duration="627000" />
       <workItem from="1601378233977" duration="13865000" />
-      <workItem from="1601453110061" duration="1217000" />
-      <workItem from="1601574101749" duration="8933000" />
     </task>
     <servers />
   </component>
@@ -203,42 +217,35 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TESTER! hei." />
     <option name="LAST_COMMIT_MESSAGE" value="TESTER! hei." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="387" y="142" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601919152653">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1601407184437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="387" y="142" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1601919152653" />
-    <state x="484" y="231" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1601623628136">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601407184437" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1601407184437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="484" y="231" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.1280.680@0.0.1280.680" timestamp="1601623628136" />
-    <state width="1237" height="145" key="GridCell.Tab.0.bottom" timestamp="1601920843810">
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601407184437" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1601407184437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="145" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601920843810" />
-    <state width="1237" height="145" key="GridCell.Tab.0.center" timestamp="1601920843810">
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601407184437" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1601407184437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="145" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601920843810" />
-    <state width="1237" height="145" key="GridCell.Tab.0.left" timestamp="1601920843809">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="145" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601920843809" />
-    <state width="1237" height="145" key="GridCell.Tab.0.right" timestamp="1601920843810">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="145" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601920843810" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601407184437" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1601407184438">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -259,35 +266,19 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1601377322987" />
-    <state x="458" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601921977305">
+    <state x="458" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601377961239">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="458" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1601921977305" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Håvard's kode/Utgår/Server.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="458" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1601377961239" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST_KOMMUNISKASJON.coverage" NAME="SUPERTEST KOMMUNISKASJON Coverage Results" MODIFIED="1601378244760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Stjelte_anders_sin.coverage" NAME="Stjelte anders sin Coverage Results" MODIFIED="1601626307251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Client.coverage" NAME="Client Coverage Results" MODIFIED="1601454230782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Warmup_exercise.coverage" NAME="Warmup exercise Coverage Results" MODIFIED="1601379412051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$testing.coverage" NAME="testing Coverage Results" MODIFIED="1601626236577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Part2_client_template_girts.coverage" NAME="Part2 client template girts Coverage Results" MODIFIED="1601920843803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST2.coverage" NAME="SUPERTEST2 Coverage Results" MODIFIED="1601378301309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Server.coverage" NAME="Server Coverage Results" MODIFIED="1601624324301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Mal_for_client.coverage" NAME="Mal for client Coverage Results" MODIFIED="1601624333946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Maler for server og client" />
     <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Test_TCP_Programming.coverage" NAME="Test TCP-Programming Coverage Results" MODIFIED="1601379764150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic Server_Client Communication" />
     <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST3.coverage" NAME="SUPERTEST3 Coverage Results" MODIFIED="1601378557665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Part2_Kladd_Client.coverage" NAME="Part2_Kladd_Client Coverage Results" MODIFIED="1601920373811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Anders' kode" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Warm_up_exercise_final.coverage" NAME="Warm-up_exercise_final Coverage Results" MODIFIED="1601622336042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Anders' kode" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST_KOMMUNISKASJON.coverage" NAME="SUPERTEST KOMMUNISKASJON Coverage Results" MODIFIED="1601378244760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Client.coverage" NAME="Client Coverage Results" MODIFIED="1601406855697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Warmup_exercise.coverage" NAME="Warmup exercise Coverage Results" MODIFIED="1601379412051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST2.coverage" NAME="SUPERTEST2 Coverage Results" MODIFIED="1601378301309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Server.coverage" NAME="Server Coverage Results" MODIFIED="1601406854075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Mal_for_client.coverage" NAME="Mal for client Coverage Results" MODIFIED="1601404835895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Maler for server og client" />
   </component>
 </project>

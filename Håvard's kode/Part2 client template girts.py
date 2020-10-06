@@ -97,6 +97,9 @@ def connect_to_server():
 
     # TODO Step 1: implement connection establishment
     # Hint: create a socket, connect, handle exceptions, then change current_state accordingly
+    client_socket = socket(AF_INET, SOCK_STREAM)  # Setter sockets hhv. internett og TCP.
+    client_socket.connect(("datakomm.work", 1300))  # Connecter til Sockets med inputs som ble spurt om tidligere
+    client_socket.settimeout(3)
 
     # TODO Step 3: switch to sync mode
     # Hint: send the sync command according to the protocol
