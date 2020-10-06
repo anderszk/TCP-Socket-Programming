@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f89731-03c1-42e7-b82e-a0075b68c7fb" name="Default Changelist" comment="test1">
-      <change beforePath="$PROJECT_DIR$/Håvard's kode/Part 2 Client.py" beforeDir="false" afterPath="$PROJECT_DIR$/Håvard's kode/Part 2 Client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Public chat reader">
+  <component name="RunManager" selected="Python.chat_client_TORJE">
     <configuration name="Client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TCP-Socket-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,8 +177,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Public chat reader" />
         <item itemvalue="Python.chat_client_TORJE" />
+        <item itemvalue="Python.Public chat reader" />
         <item itemvalue="Python.Part2 client template girts" />
         <item itemvalue="Python.Warm-up_exercise_final" />
         <item itemvalue="Python.Client" />
