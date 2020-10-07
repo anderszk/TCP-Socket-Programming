@@ -192,7 +192,7 @@
       <workItem from="1601377200670" duration="154000" />
       <workItem from="1601377367190" duration="627000" />
       <workItem from="1601378233977" duration="13865000" />
-      <workItem from="1602071942016" duration="9645000" />
+      <workItem from="1602071942016" duration="10570000" />
     </task>
     <servers />
   </component>
@@ -216,22 +216,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="TESTER! hei." />
   </component>
   <component name="WindowStateProjectService">
-    <state width="595" height="553" key="GridCell.Tab.0.bottom" timestamp="1602081140405">
+    <state width="460" height="553" key="GridCell.Tab.0.bottom" timestamp="1602082437323">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="553" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602081140405" />
-    <state width="595" height="553" key="GridCell.Tab.0.center" timestamp="1602081140405">
+    <state width="460" height="553" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602082437323" />
+    <state width="460" height="553" key="GridCell.Tab.0.center" timestamp="1602082437323">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="553" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602081140405" />
-    <state width="595" height="553" key="GridCell.Tab.0.left" timestamp="1602081140405">
+    <state width="460" height="553" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602082437323" />
+    <state width="460" height="553" key="GridCell.Tab.0.left" timestamp="1602082437323">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="553" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602081140405" />
-    <state width="595" height="553" key="GridCell.Tab.0.right" timestamp="1602081140405">
+    <state width="460" height="553" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602082437323" />
+    <state width="460" height="553" key="GridCell.Tab.0.right" timestamp="1602082437323">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="553" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602081140405" />
+    <state width="460" height="553" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602082437323" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1601407184438">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -260,7 +260,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Test_TCP_Programming.coverage" NAME="Test TCP-Programming Coverage Results" MODIFIED="1601379764150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic Server_Client Communication" />
     <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST3.coverage" NAME="SUPERTEST3 Coverage Results" MODIFIED="1601378557665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
-    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Part_2_Client.coverage" NAME="Part 2 Client Coverage Results" MODIFIED="1602081140397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
+    <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Part_2_Client.coverage" NAME="Part 2 Client Coverage Results" MODIFIED="1602082437315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
     <SUITE FILE_PATH="coverage/TCP_Socket_Programming$SUPERTEST_KOMMUNISKASJON.coverage" NAME="SUPERTEST KOMMUNISKASJON Coverage Results" MODIFIED="1601378244760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Testkoder" />
     <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Public_chat_reader.coverage" NAME="Public chat reader Coverage Results" MODIFIED="1602073620355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
     <SUITE FILE_PATH="coverage/TCP_Socket_Programming$Client.coverage" NAME="Client Coverage Results" MODIFIED="1601406855697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Håvard's kode" />
