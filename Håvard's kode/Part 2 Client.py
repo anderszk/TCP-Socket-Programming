@@ -183,7 +183,7 @@ def read_inbox():
     client_socket.send("inbox\n".encode())
     #    number_of_messages = inbox_reply.replace("inbox ", "").replace("\n", "")
     #    print("Number of messages: ", number_of_messages)
-    message_reply = "xxx"
+    message_reply = "123"
     while message_reply != "":
         message_reply = read_one_line(client_socket)
         print(message_reply)

@@ -55,10 +55,6 @@ def server_function(): #Function to assemble all the other functions #habit from
         return True
 
 
-
-
-
-
 if __name__ == "__main__": #trigger
     start_server()
     while True: #To keep the server check for responses
