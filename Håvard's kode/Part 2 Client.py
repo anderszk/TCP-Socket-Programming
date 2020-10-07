@@ -38,21 +38,14 @@ def quit_application():
 
 
 def send_command(command, arguments):
-    """
-    Send one command to the chat server.
-    :param command: The command to send (login, sync, msg, ...(
-    :param arguments: The arguments for the command as a string, or None if no arguments are needed
-        (username, message text, etc)
-    :return:
-    """
+
     global client_socket
-    message_to_send = (command + " " + arguments + "\n")
-    client_socket.send(message_to_send.encode())
-    print(message_to_send.encode())
-    # TODO: Implement this (part of step 3)
-    # Hint: concatenate the command and the arguments
-    # Hint: remember to send the newline at the end
-    pass
+    try:
+        message_to_send = (command + " " + arguments + "\n")
+        client_socket.send(message_to_send.encode())
+        print(message_to_send.encode())
+    except OSError:
+        print("You're not connected to the server!")
 
 
 def read_one_line(sock):
