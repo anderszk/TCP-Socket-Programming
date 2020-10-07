@@ -5,10 +5,6 @@
 from socket import *
 import time
 
-#TODO ================================================================
-#TODO       GENERELT FJERNE OVERFLØDIG TEKST OG KOMMENTERE BEDRE
-#TODO ================================================================
-
 # --------------------
 # Constants
 # --------------------
@@ -18,11 +14,11 @@ states = [
     "connected",  # Connected to a chat server, but not authorized (not logged in)
     "authorized"  # Connected and authorized (logged in)
 ]
-TCP_PORT = 1300  # TCP port used for communication
-SERVER_HOST = "datakomm.work"  # Set this to either hostname (domain) or IP address of the chat server
 
-# --------------------
-# State variables
+SERVER_HOST = input("Enter the name of the server you want to connect to: ") #datakomm.work
+TCP_PORT = int(input("Enter the Port you want to connect to: ")) #1300
+
+
 # --------------------
 current_state = "disconnected"  # The current state of the system
 # When this variable will be set to false, the application will stop
@@ -33,7 +29,10 @@ client_socket = None  # type: socket
 username = " "
 
 
-def quit_application(): #TODO ferdig
+def quit_application():
+    """ Update the application state so that the main-loop will exit """
+    # Make sure we reference the global variable here. Not the best code style,
+    # but the easiest to work with without involving object-oriented code
     global must_run
     must_run = False
 
@@ -47,15 +46,10 @@ def send_command(command, arguments):
         print(message_to_send.encode())
     except OSError:
         print("You're not connected to the server!")
-    return None
 
 
-def read_one_line(sock): # oppgitt fra girts
-    """
-    Read one line of text from a socket
-    :param sock: The socket to read from.
-    :return:
-    """
+def read_one_line(sock):
+
     newline_received = False
     message = ""
     while not newline_received:
@@ -69,17 +63,16 @@ def read_one_line(sock): # oppgitt fra girts
     return message
 
 
-def get_servers_response(): #TODO Ferdig
-    return client_socket.recv(1337).decode()
+def get_servers_response():
+
+    server_response = client_socket.recv(1000).decode()
+    return server_response
 
 
-def connect_to_server(): #TODO litt finpuss
-    # Must have these two lines, otherwise the function will not "see" the global variables that we will change here
+def connect_to_server():
+
     global client_socket
     global current_state
-
-    # TODO Step 1: implement connection establishment
-    # Hint: create a socket, connect, handle exceptions, then change current_state accordingly
 
     try:
         client_socket = socket(AF_INET, SOCK_STREAM)
@@ -87,121 +80,75 @@ def connect_to_server(): #TODO litt finpuss
         client_socket.connect((SERVER_HOST, TCP_PORT))
         current_state = "connected"
 
-        # TODO Step 3: switch to sync mode
-        # Hint: send the sync command according to the protocol
-        # Hint: create function send_command(command, arguments) which you will use to send this and all other commands
-        # to the server
         client_socket.send("sync\n".encode())
+
         sync_mode_confirmation = get_servers_response()
         print(sync_mode_confirmation)
 
     except IOError:
-        print("Failed to connect to server")
+        print("An error has occured: ",e)
         current_state = "disconnected"
 
-    # TODO Step 4: wait for the servers response and find out whether the switch to SYNC mode was successful
-    # Hint: implement the get_servers_response function first - it should wait for one response command from the server
-    # and return the server's response (we expect "modeok" response here). This get_servers_response() function
-    # will come in handy later as well - when we will want to check the server's response to login, messages etc
-    #print("CONNECTION NOT IMPLEMENTED!")
 
+def disconnect_from_server():
 
-def disconnect_from_server(): # TODO finpuss
-    # TODO Step 2: Implement disconnect
-    # Hint: close the socket, handle exceptions, update current_state accordingly
-
-    # Must have these two lines, otherwise the function will not "see" the global variables that we will change here
     global client_socket
     global current_state
     client_socket.close()
     current_state = "disconnected"
-    pass
+    print("You have been disconnected from the server!")
 
 
-def login_to_server(): #TODO Opprydding, har endret svarene f.eks 'Login succesful' osv..
+def login_to_server():
     global current_state
     global username
-    username = input("Choose a username: ")
-    # send_command(None, "login" + username)
-    # login_message = "login " + username + "\n"
+    username = input("Please enter your username here: ")
     send_command("login", username)
     login_answer = get_servers_response()
-    new_login_answer = login_answer.replace("\n", "")
-    #print(login_answer)
+    login_answer.strip("\n")
+    print(login_answer)
 
-    if new_login_answer == "loginok":
-        print("Login succesful!")
+    if login_answer == "loginok":
+        print('Login successful!')
         current_state = "authorized"
-    if new_login_answer == "loginerr username already in use":
-        print("The username is allready in use, try another one.. ")
+    elif login_answer == "loginerr username already in use":
+        print("The username is already in use, try another one.. ")
         login_to_server()
-    if new_login_answer == "loginerr incorrect username format":
+    elif login_answer == "loginerr incorrect username format":
         print("Try using normal characters, not the weird norwegian ones.. ")
         login_to_server()
 
     return None
 
 
-def send_public_message(): #TODO Ferdig?
+def send_public_message():
     message = input("Writing to (Public): ")
     send_command("msg", message)
-    #print(get_servers_response)
     return None
 
 
-def send_private_message(): #TODO Har endret mye her på tekstene, FERDIG!
+def send_private_message():
     print(f"You are logged in as: '{username}'")
     user_to_send_to = input("Choose recipient: ")
     message = input(f"Writing to ({user_to_send_to}): ")
     send_command("privmsg", f"{user_to_send_to} <-- has recieved message from '{username}': {message}")
-    #print(get_servers_response())
     return None
 
 
-def get_user_list(): #TODO kan gjøres mer original
+def get_user_list():
     client_socket.send("users\n".encode())
     print("Online users: ")
     user_list = (get_servers_response())
     print(user_list.replace(" ", "\n"))
     return None
 
-def inbox(): #TODO ignorer denne..
-    return None
 
-def read_inbox(): #TODO Håvard jobber her.
+
+
+def read_inbox():
     client_socket.send("inbox\n".encode())
-    inbox_reply = read_one_line(client_socket)
-    number_of_messages = inbox_reply.replace("inbox ", "").replace("\n", "")
-    print("Number of messages: ", number_of_messages)
-    print("huh")
-    message_reply = "ab"
-    while message_reply != "":
-        message_reply = read_one_line(client_socket)
-        if "inbox 0" in message_reply:
-            print("No messages")
-            return None
-
-        if "privmsg" in message_reply:
-            private_messages = message_reply.replace("privmsg", "")
-            print("Private message:")
-            print(private_messages)
-            return None
-        if "privmsg" not in message_reply:
-            #public_message = message_reply.replace("msg", "")
-            #print("Public message:")
-            #print(public_message)
-            return None
-
-    return None
-
-
-
-
-def read_inbox_original(): #TODO testing
-    client_socket.send("inbox\n".encode())
-    #inbox_reply = read_one_line(client_socket)
-    #number_of_messages = inbox_reply.replace("inbox ", "").replace("\n", "")
-    #print("Number of messages: ", number_of_messages)
+    #    number_of_messages = inbox_reply.replace("inbox ", "").replace("\n", "")
+    #    print("Number of messages: ", number_of_messages)
     message_reply = "123"
     while message_reply != "":
         message_reply = read_one_line(client_socket)
@@ -210,22 +157,20 @@ def read_inbox_original(): #TODO testing
             print("No messages")
             return None
 
+        message_reply = read_one_line(client_socket)
         if "privmsg" in message_reply:
             private_messages = message_reply.replace("privmsg", "")
             print("Private message:")
             print(private_messages)
             return None
-        if "privmsg" not in message_reply:
-            #public_message = message_reply.replace("msg", "")
-            #print("Public message:")
-            #print(public_message)
+        elif "privmsg" not in message_reply:
+            public_message = message_reply.replace("msg", "")
+            print("Public message:")
+            print(public_message)
             return None
 
     return None
 
-#TODO =================================================
-#TODO       ALT UNDER HER ER OPPGITT MENER JEG..
-#TODO =================================================
 
 """
 The list of available actions that the user can perform
@@ -319,7 +264,6 @@ def run_chat_client():
 
     while must_run:
         print_menu()
-        inbox()
         action = select_user_action()
         perform_user_action(action)
     print("Thanks for watching. Like and subscribe! 👍")
@@ -382,7 +326,6 @@ def perform_user_action(action_index):
             print("This function is not allowed in the current system state (%s)" % current_state)
     else:
         print("Invalid input, please choose a valid action")
-    print()
     return None
 
 
