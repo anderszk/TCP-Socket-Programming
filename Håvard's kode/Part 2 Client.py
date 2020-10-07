@@ -52,6 +52,26 @@ def send_command(command, arguments):
 
 def read_one_line(sock): #TODO Oppgitt fra girts, trur æ..
 
+    try:
+        newline_received = False
+        message = ""
+        while not newline_received:
+            character = sock.recv(1).decode()
+            if character == '\n':
+                newline_received = True
+            elif character == '\r':
+                pass
+            else:
+                message += character
+        return message
+
+    except:
+        return False
+
+
+
+def read_one_line_original(sock): #TODO Oppgitt fra girts, trur æ..
+
     newline_received = False
     message = ""
     while not newline_received:
@@ -66,7 +86,10 @@ def read_one_line(sock): #TODO Oppgitt fra girts, trur æ..
 
 
 def get_servers_response(): #TODO Ferdig
-    return client_socket.recv(1337).decode()
+    try:
+        return client_socket.recv(1337).decode()
+    except:
+        return False
 
 
 def connect_to_server(): #TODO litt finpuss
@@ -167,29 +190,63 @@ def get_user_list(): #TODO kan gjøres mer original
 #TODO ...
 #TODO [priv]msg <sender> <msg N>
 
+#TODO sender en 'msgok 1' per melding i inbox og.
+
 def read_inbox(): #TODO ignorer denne..
     client_socket.send("inbox\n".encode())
     lines = []
-    var = 0
-    try:
-        while True:
-            reply = read_one_line(client_socket)
-            if reply == "msgok 1":
-                var += 1
+    msgok = 0
+    reply = True
+    while reply is not False:
+        reply = read_one_line(client_socket)
 
+        print(reply)
+        if 'msgok' in str(reply) or reply == False:
+            to = 2
+        else:
             lines.append(reply)
-    except:
-        print(f"Dette er lines listen: {lines}")
-        inbox_reply = lines[1].strip("inbox")
-        print(f"Number of messages in inbox: {inbox_reply}")
 
-        for i in range(2, len(lines)):
-            line = lines[i].replace("msg", "(Public): ")
-            line = lines[i].replace("privmsg", "(Private): ")
-            print(f"{line}\n")
+    print(f"Dette er lines listen: {lines}")
+    inbox_reply = lines[0].strip("inbox")
+    print(f"Number of messages in inbox: {inbox_reply}\n")
+
+    #TODO dobbelskjekk.
+
+    for i in range(1, len(lines)):
+        line = lines[i].replace("privmsg", "(Private): ")
+        line2 = line.replace("msg", "(Public): ")
+        print(f"{line2}")
+    return None
 
 
 
+
+
+def read_inbox_aertaert(): #TODO ignorer denne..
+    client_socket.send("inbox\n".encode())
+    lines = []
+    msgok = 0
+    while len(lines) <= msgok:
+        reply = read_one_line(client_socket)
+        if reply == False:
+            msgok -= 1000
+
+        print(reply)
+        if 'msgok' in reply:
+            msgok += 1
+            print(f"msgok = {msgok}")
+            print(len(lines))
+        else:
+            lines.append(reply)
+
+    print(f"Dette er lines listen: {lines}")
+    inbox_reply = lines[0].strip("inbox")
+    print(f"Number of messages in inbox: {inbox_reply}\n")
+
+    for i in range(1, len(lines)):
+        line = lines[i].replace("msg", "(Public): ")
+        line = lines[i].replace("privmsg", "(Private): ")
+        print(f"{line}")
     return None
 
 
