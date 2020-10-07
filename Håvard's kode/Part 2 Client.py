@@ -44,18 +44,14 @@ def send_command(command, arguments):
     try:
         message_to_send = (command + " " + arguments + "\n")
         client_socket.send(message_to_send.encode())
-        print(message_to_send.encode())
+        #print(message_to_send.encode())
     except OSError:
         print("You're not connected to the server!")
     return None
 
 
-def read_one_line(sock): # oppgitt fra girts
-    """
-    Read one line of text from a socket
-    :param sock: The socket to read from.
-    :return:
-    """
+def read_one_line(sock): #TODO Oppgitt fra girts, trur æ..
+
     newline_received = False
     message = ""
     while not newline_received:
@@ -153,7 +149,7 @@ def send_private_message(): #TODO Har endret mye her på tekstene, FERDIG!
     print(f"You are logged in as: '{username}'")
     user_to_send_to = input("Choose recipient: ")
     message = input(f"Writing to ({user_to_send_to}): ")
-    send_command("privmsg", f"{user_to_send_to} <-- has recieved message from '{username}': {message}")
+    send_command("privmsg", f"{user_to_send_to} has recieved message from '{username}': {message}")
     #print(get_servers_response())
     return None
 
@@ -165,63 +161,43 @@ def get_user_list(): #TODO kan gjøres mer original
     print(user_list.replace(" ", "\n"))
     return None
 
-def inbox(): #TODO ignorer denne..
-    return None
 
-def read_inbox(): #TODO Håvard jobber her.
+#TODO inbox <N>
+#TODO msg <sender> <msg 1>
+#TODO ...
+#TODO [priv]msg <sender> <msg N>
+
+def read_inbox(): #TODO ignorer denne..
     client_socket.send("inbox\n".encode())
-    inbox_reply = read_one_line(client_socket)
-    number_of_messages = inbox_reply.replace("inbox ", "").replace("\n", "")
-    print("Number of messages: ", number_of_messages)
-    print("huh")
-    message_reply = "ab"
-    while message_reply != "":
-        message_reply = read_one_line(client_socket)
-        if "inbox 0" in message_reply:
-            print("No messages")
-            return None
+    lines = []
+    var = 0
+    try:
+        while True:
+            reply = read_one_line(client_socket)
+            if reply == "msgok 1":
+                var += 1
 
-        if "privmsg" in message_reply:
-            private_messages = message_reply.replace("privmsg", "")
-            print("Private message:")
-            print(private_messages)
-            return None
-        if "privmsg" not in message_reply:
-            #public_message = message_reply.replace("msg", "")
-            #print("Public message:")
-            #print(public_message)
-            return None
+            lines.append(reply)
+    except:
+        print(f"Dette er lines listen: {lines}")
+        inbox_reply = lines[1].strip("inbox")
+        print(f"Number of messages in inbox: {inbox_reply}")
+
+        for i in range(2, len(lines)):
+            line = lines[i].replace("msg", "(Public): ")
+            line = lines[i].replace("privmsg", "(Private): ")
+            print(f"{line}\n")
+
+
 
     return None
 
 
+def joke():
+    send_command("joke", "")
+    joke_ans = get_servers_response()
+    print(joke_ans.replace("joke", "Here is the joke:\n\n" ))
 
-
-def read_inbox_original(): #TODO testing
-    client_socket.send("inbox\n".encode())
-    #inbox_reply = read_one_line(client_socket)
-    #number_of_messages = inbox_reply.replace("inbox ", "").replace("\n", "")
-    #print("Number of messages: ", number_of_messages)
-    message_reply = "123"
-    while message_reply != "":
-        message_reply = read_one_line(client_socket)
-        print(message_reply)
-        if "inbox 0" in message_reply:
-            print("No messages")
-            return None
-
-        if "privmsg" in message_reply:
-            private_messages = message_reply.replace("privmsg", "")
-            print("Private message:")
-            print(private_messages)
-            return None
-        if "privmsg" not in message_reply:
-            #public_message = message_reply.replace("msg", "")
-            #print("Public message:")
-            #print(public_message)
-            return None
-
-    return None
 
 #TODO =================================================
 #TODO       ALT UNDER HER ER OPPGITT MENER JEG..
@@ -304,7 +280,7 @@ available_actions = [
         # TODO - optional step - implement the joke fetching from the server.
         # Hint: this part is not described in the protocol. But the command is simple. Try to find
         # out how it works ;)
-        "function": None
+        "function": joke
     },
     {
         "description": "Quit the application",
@@ -319,7 +295,6 @@ def run_chat_client():
 
     while must_run:
         print_menu()
-        inbox()
         action = select_user_action()
         perform_user_action(action)
     print("Thanks for watching. Like and subscribe! 👍")
