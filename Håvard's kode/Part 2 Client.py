@@ -29,15 +29,12 @@ client_socket = None  # type: socket
 username = " "
 
 
-def quit_application():
-    """ Update the application state so that the main-loop will exit """
-    # Make sure we reference the global variable here. Not the best code style,
-    # but the easiest to work with without involving object-oriented code
+def quit_application(): #TODO ferdig
     global must_run
     must_run = False
 
 
-def send_command(command, arguments):
+def send_command(command, arguments): #TODO må pusses opp
     """
     Send one command to the chat server.
     :param command: The command to send (login, sync, msg, ...(
@@ -55,7 +52,7 @@ def send_command(command, arguments):
     pass
 
 
-def read_one_line(sock):
+def read_one_line(sock): # oppgitt fra girts
     """
     Read one line of text from a socket
     :param sock: The socket to read from.
@@ -74,17 +71,11 @@ def read_one_line(sock):
     return message
 
 
-def get_servers_response():
-    """
-    Wait until a response command is received from the server
-    :return: The response of the server, the whole line as a single string
-    """
-    # TODO Step 4: implement this function
-    # Hint: reuse read_one_line (copied from the tutorial-code)
-    return client_socket.recv(1000).decode()
+def get_servers_response(): #TODO Ferdig
+    return client_socket.recv(1337).decode()
 
 
-def connect_to_server():
+def connect_to_server(): #TODO litt finpuss
     # Must have these two lines, otherwise the function will not "see" the global variables that we will change here
     global client_socket
     global current_state
@@ -117,7 +108,7 @@ def connect_to_server():
     #print("CONNECTION NOT IMPLEMENTED!")
 
 
-def disconnect_from_server():
+def disconnect_from_server(): # TODO finpuss
     # TODO Step 2: Implement disconnect
     # Hint: close the socket, handle exceptions, update current_state accordingly
 
@@ -129,7 +120,7 @@ def disconnect_from_server():
     pass
 
 
-def login_to_server():
+def login_to_server(): #TODO
     global current_state
     global username
     username = input("Choose a username: ")
@@ -138,7 +129,7 @@ def login_to_server():
     send_command("login", username)
     login_answer = get_servers_response()
     new_login_answer = login_answer.replace("\n", "")
-    print(login_answer)
+    #print(login_answer)
 
     if new_login_answer == "loginok":
         print("Login succesful!")
@@ -156,7 +147,7 @@ def login_to_server():
 def send_public_message():
     message = input("Writing to (Public): ")
     send_command("msg", message)
-    print(get_servers_response)
+    #print(get_servers_response)
     return None
 
 
@@ -165,7 +156,7 @@ def send_private_message():
     user_to_send_to = input("Choose recipient: ")
     message = input(f"Writing to ({user_to_send_to}): ")
     send_command("privmsg", f"{user_to_send_to} <-- has recieved message from '{username}': {message}")
-    print(get_servers_response())
+    #print(get_servers_response())
     return None
 
 
@@ -176,13 +167,43 @@ def get_user_list():
     print(user_list.replace(" ", "\n"))
     return None
 
+def inbox():
+    return None
+
+def read_inbox():
+    client_socket.send("inbox\n".encode())
+    inbox_reply = read_one_line(client_socket)
+    number_of_messages = inbox_reply.replace("inbox ", "").replace("\n", "")
+    print("Number of messages: ", number_of_messages)
+    print("huh")
+    message_reply = "ab"
+    while message_reply != "":
+        message_reply = read_one_line(client_socket)
+        if "inbox 0" in message_reply:
+            print("No messages")
+            return None
+
+        if "privmsg" in message_reply:
+            private_messages = message_reply.replace("privmsg", "")
+            print("Private message:")
+            print(private_messages)
+            return None
+        if "privmsg" not in message_reply:
+            #public_message = message_reply.replace("msg", "")
+            #print("Public message:")
+            #print(public_message)
+            return None
+
+    return None
+
 
 
 
 def read_inbox():
     client_socket.send("inbox\n".encode())
-    #    number_of_messages = inbox_reply.replace("inbox ", "").replace("\n", "")
-    #    print("Number of messages: ", number_of_messages)
+    #inbox_reply = read_one_line(client_socket)
+    #number_of_messages = inbox_reply.replace("inbox ", "").replace("\n", "")
+    #print("Number of messages: ", number_of_messages)
     message_reply = "123"
     while message_reply != "":
         message_reply = read_one_line(client_socket)
@@ -191,16 +212,15 @@ def read_inbox():
             print("No messages")
             return None
 
-        message_reply = read_one_line(client_socket)
         if "privmsg" in message_reply:
             private_messages = message_reply.replace("privmsg", "")
             print("Private message:")
             print(private_messages)
             return None
         if "privmsg" not in message_reply:
-            public_message = message_reply.replace("msg", "")
-            print("Public message:")
-            print(public_message)
+            #public_message = message_reply.replace("msg", "")
+            #print("Public message:")
+            #print(public_message)
             return None
 
     return None
@@ -298,6 +318,7 @@ def run_chat_client():
 
     while must_run:
         print_menu()
+        inbox()
         action = select_user_action()
         perform_user_action(action)
     print("Thanks for watching. Like and subscribe! 👍")
