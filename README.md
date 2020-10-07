@@ -8,7 +8,7 @@
 | ------------- | ------------- |  ------------- |
 | **Henrik Aamodt**  | aahenrik  |  0 |
 | **Håvard Kalliainen**  | haavardnk  |  4 |
-| **Anders Kristensen**  | anderszk  |  7 |
+| **Anders Kristensen**  | anderszk  |  8 |
 | **Sacit Senkaya**  | sacitali  |  0 |
 
 
