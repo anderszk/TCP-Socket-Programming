@@ -4,12 +4,12 @@
 **Group 11:**
 
 
-| Name  | Username |  Contributions |
-| ------------- | ------------- |  ------------- |
-| **Henrik Aamodt**  | aahenrik  |  0 |
-| **Håvard Kalliainen**  | haavardnk  |  4 |
-| **Anders Kristensen**  | anderszk  |  8 |
-| **Sacit Senkaya**  | sacitali  |  0 |
+| Name  | Username |   
+| ------------- | ------------- | 
+| **Henrik Aamodt**  | aahenrik  | 
+| **Håvard Kalliainen**  | haavardnk  | 
+| **Anders Kristensen**  | anderszk  | 
+| **Sacit Senkaya**  | sacitali  | 
 
 
 Part1: Warm-up Client can be found [here](https://github.com/anderszk/TCP-Socket-Programming/blob/master/Anders'%20kode/Warm-up_exercise_final.py)
