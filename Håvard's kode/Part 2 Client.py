@@ -69,22 +69,6 @@ def read_one_line(sock): #TODO Oppgitt fra girts, trur æ..
         return False
 
 
-
-def read_one_line_original(sock): #TODO Oppgitt fra girts, trur æ..
-
-    newline_received = False
-    message = ""
-    while not newline_received:
-        character = sock.recv(1).decode()
-        if character == '\n':
-            newline_received = True
-        elif character == '\r':
-            pass
-        else:
-            message += character
-    return message
-
-
 def get_servers_response(): #TODO Ferdig
     try:
         return client_socket.recv(1337).decode()
