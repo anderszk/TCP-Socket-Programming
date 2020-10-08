@@ -1,7 +1,7 @@
 # TCP-Socket-Programming
 
-**IELET2001: Datakommunikasjon**
-**Group 11:**
+**IELET2001: Datakommunikasjon** <br>
+**Group 11**
 
 
 | Name  | Username |    
