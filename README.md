@@ -7,7 +7,7 @@
 | Name  | Username |    
 | ------------- | ------------- | 
 | **Henrik Aamodt**  | aahenrik  | 
-| **Håvard Kalliainen**  | haavardnk  | 
+| **Håvard Kalliainen**  | haavardmk  | 
 | **Anders Kristensen**  | anderszk  | 
 | **Sacit Senkaya**  | sacitali  | 
 <br>
