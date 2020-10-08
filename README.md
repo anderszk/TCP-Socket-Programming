@@ -19,4 +19,4 @@ Part2: **TCP-Client** can be found [**here**](https://github.com/anderszk/TCP-So
 
 <br><br>
 
-![Haccerman](https://i.pinimg.com/originals/1e/b6/62/1eb6625adf1d63d969a72bd80cc593ba.jpg = 250x350)
+![Haccerman](https://i.pinimg.com/originals/1e/b6/62/1eb6625adf1d63d969a72bd80cc593ba.jpg =200x150)
