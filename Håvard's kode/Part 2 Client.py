@@ -195,27 +195,21 @@ def get_user_list(): #TODO kan gjøres mer original
 def read_inbox(): #TODO ignorer denne..
     client_socket.send("inbox\n".encode())
     lines = []
-    msgok = 0
     reply = True
     while reply is not False:
         reply = read_one_line(client_socket)
-
-        print(reply)
         if 'msgok' in str(reply) or reply == False:
-            to = 2
+            pass
         else:
             lines.append(reply)
-
-    print(f"Dette er lines listen: {lines}")
+    boarder = "=" * 25 + "<INBOX>" + "=" * 25
     inbox_reply = lines[0].strip("inbox")
-    print(f"Number of messages in inbox: {inbox_reply}\n")
-
-    #TODO dobbelskjekk.
+    print(f"{boarder} \n| Number of messages in inbox: {inbox_reply} |\n|")
 
     for i in range(1, len(lines)):
-        line = lines[i].replace("privmsg", "(Private): ")
-        line2 = line.replace("msg", "(Public): ")
-        print(f"{line2}")
+        line = lines[i].replace("privmsg", "| (Private): ")
+        print(f'{line.replace("msg", "| (Public): ")} |')
+    print(boarder)
     return None
 
 
