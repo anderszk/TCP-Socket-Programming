@@ -19,4 +19,5 @@ Part2: **TCP-Client** can be found [**here**](https://github.com/anderszk/TCP-So
 
 <br>
 <img src="https://i.pinimg.com/originals/1e/b6/62/1eb6625adf1d63d969a72bd80cc593ba.jpg" alt="hacc" width="300"/>
+<img src="https://memegenerator.net/img/instances/62789357/when-did-you-become-an-expert-in-tcpip-protocol-last-night.jpg" alt="hacc"/>
 
