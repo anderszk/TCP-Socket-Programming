@@ -172,7 +172,7 @@ def read_inbox():
 def joke():
     send_command("joke", "")
     joke_ans = get_servers_response()
-    print(joke_ans.replace("joke", "Here is the joke:\n\n" ))
+    print(joke_ans.replace("joke", "Here is the joke:\n"))
 
 
 """
@@ -337,3 +337,4 @@ def perform_user_action(action_index):
 # By clicking it you run the application.
 if __name__ == '__main__':
     run_chat_client()
+
