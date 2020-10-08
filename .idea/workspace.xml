@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f89731-03c1-42e7-b82e-a0075b68c7fb" name="Default Changelist" comment="test1">
-      <change beforePath="$PROJECT_DIR$/Håvard's kode/Part 2 Client.py" beforeDir="false" afterPath="$PROJECT_DIR$/Håvard's kode/Part 2 Client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Part2_final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Part 2 Client">
+  <component name="RunManager" selected="Python.Part2_final">
     <configuration name="Part 2 Client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TCP-Socket-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -115,6 +116,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Part2_final" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TCP-Socket-Programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Part2_final.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Public chat reader" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TCP-Socket-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,28 +151,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Håvard's kode/Public chat reader.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Warm-up_exercise_final" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TCP-Socket-Programming" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Anders' kode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anders' kode/Warm-up_exercise_final.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Part2_final" />
         <item itemvalue="Python.Part 2 Client" />
         <item itemvalue="Python.Public chat reader" />
         <item itemvalue="Python.chat_client_TORJE" />
         <item itemvalue="Python.Part2 client template girts" />
-        <item itemvalue="Python.Warm-up_exercise_final" />
       </list>
     </recent_temporary>
   </component>
