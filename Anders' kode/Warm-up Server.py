@@ -16,7 +16,7 @@ def read_request():
         global connection_socket #Global type makes it available for use in functions as a local variable
         request_client = connection_socket.recv(1000).decode() #Receives the data from the client
         request = request_client.strip("\n") #Strips newline
-        print("Message from server: ",request)
+        print("Request from Client: ",request)
         return request #Returns the list with data from the client
     except ConnectionResetError: #Excepts the connectionreseterror
         print("oops.. something happened")
@@ -26,7 +26,7 @@ def send_response(total): #Function to send a respons back to the client
     global connection_socket #Global type makes it available for use in functions as a local variable
     send = str(total) #Changes the datatype from integer to string
     response_server = connection_socket.send(send.encode()) #Sends and encodes the message as byte-array
-    print("Message sent to Client: ",send)
+    print("Reponse sent to Client: ",send)
 
 
 def adder(response): #Function to both determine if the response was integers and to detect errors, will always return total
