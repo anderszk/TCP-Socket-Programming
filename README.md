@@ -15,7 +15,7 @@
 Part1: **Warm-up Client** can be found [**here**](https://github.com/anderszk/TCP-Socket-Programming/blob/master/Anders'%20kode/Warm-up_exercise_final.py)<br>
 Part1: **Warm-up Server** can be found [**here**](https://github.com/anderszk/TCP-Socket-Programming/blob/master/Anders'%20kode/Warm-up%20Server.py)
 
-Part2: **TCP-Client** can be found [**here**](https://github.com/anderszk/TCP-Socket-Programming/blob/master/Part2_final.py)<br>
+Part2: **TCP-Client** can be found [**here**](https://github.com/anderszk/TCP-Socket-Programming/blob/master/Anders'%20kode/client_rsp.py)<br>
 Part2: **BONUS! Chat reader** can be found [**here**](https://github.com/anderszk/TCP-Socket-Programming/blob/master/H%C3%A5vard's%20kode/Public%20chat%20reader.py)<br>
 
 <br>
