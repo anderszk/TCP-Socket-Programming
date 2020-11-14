@@ -10,7 +10,7 @@
 #define gpsPin 26
 
 const char* ssid = "Asus telefon"; const char* password =  "fiskekakey0";
-//const char* ssid = "Get-DD3CA1"; const char* password =  "HEBJFBPBDD";
+//const char* ssid = ""; const char* password =  "";
 const char* ip_esp32 = "192.168.43.116";
 const char* ip_raspberry = "192.168.43.19";
 int port_raspberry = 2520; // eller 22??
@@ -279,9 +279,9 @@ void send_json() {
     }
 }
 
-void send_livedata(int bpm_sim) {
+void send_livedata() {
   if (is_user_wearing()){
-    String read_sensor = String(heartbeat_sim(bpm_sim));
+    String read_sensor = String(heartsensor_read());
     char* read_sensor_list = const_cast<char*>(read_sensor.c_str());
     webSocket.emit("livedata", read_sensor_list);
     Serial.println(read_sensor_list);
@@ -332,31 +332,8 @@ void setup() {  /* <============<   SETUP   >==============> */
     //socket_wifi_setup();
 }
 
+
 void loop() { /* <==============< VOID LOOP >==============> */
-
-    /* <==============< Kjører mange gang per sek >==============> */
-  if (prev_1 + 100 < millis()) {
-    prev_1 = millis();
-    }
-  /* <==============< Kjører en gang per sek >==============> */
-  /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-  /* <==============< Kjører en gang per sek >==============> */
-  if (prev_2 + 1000 < millis()) {
-    prev_2 = millis();
-    Serial.print("Lat: ");
-    Serial.println(getGPS("lat"));
-    Serial.print("Lon: ");
-    Serial.println(getGPS("lng"));
-    Serial.print("Alt: ");
-    Serial.println(getGPS("alt"));
-    Serial.print("Sat: ");
-    Serial.println(getGPS("sat"));
-    
-    }
-  /* <==============< Kjører en gang per sek >==============> */
-}
-
-void loop_test() { /* <==============< VOID LOOP >==============> */
   
   webSocket.loop(); //Keeps the WebSocket connection running
   json_string = make_json();
@@ -364,7 +341,7 @@ void loop_test() { /* <==============< VOID LOOP >==============> */
     /* <==============< Kjører mange gang per sek >==============> */
   if (prev_1 + 100 < millis()) {
     prev_1 = millis();
-    send_livedata(80);
+    send_livedata();
     }
   /* <==============< Kjører en gang per sek >==============> */
   /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
